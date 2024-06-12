@@ -43,7 +43,7 @@ jobs:
     needs: Test
     env:
       GITHUB_LOGIN: ${{ github.actor }}
-      GITHUB_PACKAGES: ${{ S }}
+      GITHUB_PACKAGES: ${{ secrets.GITHUB_TOKEN }}
       GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - run: echo "El desarrollador ${{ github.actor }} está añadiendo una nueva versión"
