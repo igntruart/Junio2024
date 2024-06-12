@@ -52,7 +52,7 @@ publishing {
     publications {
         gpr(MavenPublication) {
             //Del tutorial https://docs.gradle.org/current/userguide/publishing_maven.html#publishing_maven
-            groupId = 'us.dit.fs.igntruart'
+            groupId = 'test.junio24.artifact'
             artifactId = 'igntruart'
             version = '0.0.3'
             from components.java
