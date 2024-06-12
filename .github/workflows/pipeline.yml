@@ -43,8 +43,8 @@ jobs:
     needs: Test
     env:
       GITHUB_LOGIN: ${{ github.actor }}
-      GITHUB_PACKAGES: ${{ secrets.GITHUB_TOKEN }}
-      GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_PACKAGES: ${{ secrets.GH_TOKEN }}
+      GITHUB_OAUTH: ${{ secrets.GH_TOKEN }}
     steps:
       - run: echo "El desarrollador ${{ github.actor }} está añadiendo una nueva versión"
       - name: Clonando el repositorio y estableciendo el espacio de trabajo
